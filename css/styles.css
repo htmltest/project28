@@ -27,21 +27,23 @@ nav ul li a:hover {text-decoration:underline}
 .header-order-link {float:right; margin:7px 10px 0 0; text-decoration:none; width:160px; height:29px; color:#3b2b0d; text-shadow:1px 1px 0 #ffed57; text-align:center; line-height:29px; background:url(../images/header-order-link.png)}
 .header-order-link:hover {background-position:left -29px}
 
-.promo-top-line {position:absolute; left:0; top:388px; width:100%; z-index:10}
-.promo-fixed .promo-top-line {position:fixed; top:45px; cursor:pointer}
-.promo-top-line h1 {width:445px; position:relative; text-align:center; text-transform:uppercase; margin:0 auto; height:38px; padding:13px 0 0 0; background:url(../images/promo-title.jpg); font:18px/18px "PF_Eencore_Sans_ProMedium", sans-serif; color:#fff}
-.promo-top {display:none; position:absolute; left:0; top:0; width:100%; height:51px; background:#000; background:rgba(0, 0, 0, .5); line-height:51px; white-space:nowrap; cursor:pointer}
+.promo-top-line {display:none; position:fixed; left:0; top:45px; width:100%; z-index:10; cursor:pointer}
+.promo-fixed .promo-top-line {display:block}
+.promo-top {position:absolute; left:0; top:0; width:100%; height:51px; background:#000; background:rgba(0, 0, 0, .5); line-height:51px; white-space:nowrap; cursor:pointer}
 .promo-top div {color:#a575f4; position:absolute; right:50%; margin:0 -480px 0 0}
 .promo-top div:first-child {right:auto; left:50%; margin:0 0 0 -480px}
 .promo-top img {vertical-align:middle; margin:0 2px}
-.promo-fixed .promo-top-line .promo-top {display:block}
-.promo-top-line h1 span {color:#ffb21c}
+.promo-top-text {width:445px; position:relative; text-align:center; text-transform:uppercase; margin:0 auto; height:38px; padding:13px 0 0 0; background:url(../images/promo-title.jpg); font:18px/18px "PF_Eencore_Sans_ProMedium", sans-serif; color:#fff}
+.promo-top-text span {color:#ffb21c}
 
-#promo {background:#3c1f6b url(../images/promo-bg.jpg) no-repeat center top; padding:388px 0 0 0; position:relative; z-index:4}
+#promo {background:#3c1f6b url(../images/promo-bg.jpg) no-repeat center top; padding:337px 0 0 0; position:relative; z-index:4}
 #promo:after {content:""; display:block; width:100%; height:5px; position:absolute; left:0; bottom:-5px; background:url(../images/promo-line.png)}
 
 .promo-label {position:absolute; left:50%; top:21px; display:block; margin-left:372px; width:129px; height:84px; padding:44px 0 0 0; text-decoration:none; text-align:center; text-transform:uppercase; color:#000; line-height:14px; background:url(../images/promo-label.png)}
 .promo-label span {color:#c4a0ff; text-decoration:underline}
+
+#promo h1 {width:445px; position:relative; text-align:center; text-transform:uppercase; margin:0 auto; height:38px; padding:13px 0 0 0; font:18px/18px "PF_Eencore_Sans_ProMedium", sans-serif; color:#fff}
+#promo h1 span {color:#ffb21c}
 
 .promo-phone {padding:94px 0 0 0; font-size:72px; line-height:72px; color:#fff; text-align:center}
 
@@ -137,6 +139,7 @@ area {outline:none}
 .gallery-download a {color:#fff; text-decoration:none}
 .gallery-download a:hover {text-decoration:underline}
 
+.triangle-block {position:absolute; left:0; top:0; height:100%}
 .triangle {position:absolute; z-index:6}
 .triangle-01 {left:-290px; top:-128px}
 .triangle-02 {left:179px; top:13px}
